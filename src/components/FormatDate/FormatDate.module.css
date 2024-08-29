@@ -1,0 +1,11 @@
+.date {
+  display: block;
+  width: auto;
+  text-align: center;
+  padding: 5px 10px ;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--main-text-color);
+  background-color: #e2e2e23e;
+  border-radius: 2px;
+};

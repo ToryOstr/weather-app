@@ -1,5 +1,8 @@
-import backgroundVideo from "./backgroundVideo.mp4";
+import Header from "./Header/Header";
+
 import styles from "./App.module.css";
+
+import backgroundVideo from "./backgroundVideo.mp4";
 
 export default function App() {
   return (
@@ -14,6 +17,7 @@ export default function App() {
         <source 
         src={backgroundVideo} type="video/mp4"/>
       </video>
+      <Header/>
     </div>
   );
 }
