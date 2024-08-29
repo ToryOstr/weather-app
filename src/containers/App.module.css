@@ -1,0 +1,18 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.backgroundVideo {
+  position: fixed;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  filter: brightness(0.6);
+  z-index: -1;
+}
