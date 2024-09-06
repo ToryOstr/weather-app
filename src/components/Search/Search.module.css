@@ -1,0 +1,18 @@
+.searchContainer {
+  width: 300px;
+  margin: auto auto;
+  padding: 0;
+}
+.customSelect {
+  position: relative;
+  z-index: 2;
+  border-radius: 5px;
+
+}
+
+@media (max-width: 500px) {
+  .searchContainer {
+    width: 200px;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1 0 auto;
+  box-sizing: border-box;
+}
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 20px auto;
+}
+@media (max-width: 767px) {
+  .cardContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+}
