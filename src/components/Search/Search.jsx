@@ -23,8 +23,6 @@ export default function Search({ onSearchChange }) {
         geoApiOptions
       );
       const data = await response.json();
-      console.log(data);
-      
       return {
         options: data.data.map((city) => ({
           value: `${city.latitude} ${city.longitude}`,
