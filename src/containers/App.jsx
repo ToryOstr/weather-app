@@ -6,6 +6,7 @@ import styles from "./App.module.css";
 
 import backgroundVideo from "./backgroundVideo.mp4";
 import MainContainer from "./MainContainer/MainContainer";
+import SwiperContainer from "./SwiperContainer/SwiperContainer";
 
 export default function App() {
   const [dataWeather, setDataWeather] = useState(null);
@@ -47,7 +48,7 @@ export default function App() {
         onHandleGetSearchData={handleGetDataSearch}
         weatherData={dataWeather}
       >
-        <div><p>{}</p></div>
+        <SwiperContainer dataWeather={dataWeather} />
       </MainContainer>
     </div>
   );
