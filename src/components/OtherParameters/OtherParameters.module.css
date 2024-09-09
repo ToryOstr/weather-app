@@ -1,0 +1,20 @@
+.parameter {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: flex-end;
+  font-size: 16px;
+  padding: 5px 10px;
+  margin-bottom: 2px;
+  color: black;
+  border-left: 5px solid rgb(16, 16, 160);
+  background-color: rgba(0, 34, 255, 0.15);
+}
+.parameterName {
+  font-weight: 700;
+  font-size: 16px;
+}
+.img {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}

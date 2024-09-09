@@ -1,13 +1,13 @@
-import { Swiper, SwiperSlide} from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Scrollbar, Autoplay, Navigation } from "swiper/modules";
 import WeatherCard from "../../components/WeatherCard/WeatherCard";
 
-import styles from './SwiperContainer.module.css';
+import styles from "./SwiperContainer.module.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 
-export default function SwiperContainer({ dataWeather }){
+export default function SwiperContainer({ dataWeather }) {
   console.log(dataWeather);
 
   let swiper = dataWeather ? (
@@ -37,12 +37,7 @@ export default function SwiperContainer({ dataWeather }){
       {dataWeather.daily.map((day, index) => {
         return (
           <SwiperSlide key={index}>
-
-            {/* <WeatherCard
-              props={{
-                dataDay: day,
-              }}
-            /> */}
+            <WeatherCard dataDay={day} />
           </SwiperSlide>
         );
       })}
