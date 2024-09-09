@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide} from "swiper/react";
 import { Scrollbar, Autoplay, Navigation } from "swiper/modules";
+import WeatherCard from "../../components/WeatherCard/WeatherCard";
 
 import styles from './SwiperContainer.module.css';
 import "swiper/css";
