@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  flex-shrink: 0;
+  height: 80px;
+  padding: 10px;
+  box-sizing: border-box;
+
+}
+.inform {
+  line-height: 1.2;
+  font-weight: 700;
+}
+.linksContainer{
+  display: flex;
+  column-gap: 10px;
+
+}
+
+.companyLink {
+  display: flex;
+  align-items: center;
+  width: 60px;
+  height: 30px;
+  padding: 0px 3px;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(16, 16, 160);
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+.companyLink:nth-child(1){
+  width: 70px
+}
+
+.imgContainer {
+  margin-right: 3px;
+  width: 20px;
+  height: 20px;
+}
+.companyLogo{
+  max-width: 100%;
+  object-fit: contain;
+}
+.openWeatherLink{
+  display: block;
+
+  width: 60px;
+  height: auto;
+  padding: 3px;
+  box-sizing: border-box;
+}

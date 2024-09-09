@@ -7,6 +7,7 @@ import styles from "./App.module.css";
 import backgroundVideo from "./backgroundVideo.mp4";
 import MainContainer from "./MainContainer/MainContainer";
 import SwiperContainer from "./SwiperContainer/SwiperContainer";
+import Footer from "./Footer/Footer";
 
 export default function App() {
   const [dataWeather, setDataWeather] = useState(null);
@@ -50,6 +51,7 @@ export default function App() {
       >
         <SwiperContainer dataWeather={dataWeather} />
       </MainContainer>
+      <Footer/>
     </div>
   );
 }
