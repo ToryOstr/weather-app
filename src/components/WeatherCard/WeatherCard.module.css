@@ -12,6 +12,21 @@
   border-left: 2px solid rgba(125, 195, 255, 0.25);
   border-top: 2px solid rgba(125, 195, 255, 0.25);
 }
+.cardContainerStart {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: auto;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(125, 195, 255, 0.025);
+  background: linear-gradient(to right,rgba(1, 15, 67, 0.5) 0%,rgba(125, 195, 255, 0.025) 50%);
+  backdrop-filter: blur(10px);
+  border-left: 2px solid rgba(125, 195, 255, 0.25);
+  border-top: 2px solid rgba(125, 195, 255, 0.25);
+}
 .forecastDate{
   display: block;
   width: auto;
@@ -65,6 +80,7 @@
 }
 
 @media (max-width: 768px) {
+  .cardContainerStart,
   .cardContainer{
     height: auto;
   }
@@ -75,11 +91,13 @@
   .weatherIcon {
     width: 100%;
     bottom: -25%;
+    opacity: 0.3;
   }
 }
 @media (max-width: 425px) {
   .weatherIcon {
     width: 100%;
     bottom: 0;
+    opacity: 0.3;
   }
 }

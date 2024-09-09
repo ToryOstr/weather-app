@@ -37,7 +37,9 @@ export default function SwiperContainer({ dataWeather }) {
       {dataWeather.daily.map((day, index) => {
         return (
           <SwiperSlide key={index}>
-            <WeatherCard dataDay={day} />
+            <WeatherCard
+              dataDay={day} index={index}
+            />
           </SwiperSlide>
         );
       })}

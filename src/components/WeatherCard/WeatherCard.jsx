@@ -4,11 +4,11 @@ import OtherParameters from "../OtherParameters/OtherParameters";
 import WindDirection from "../WindDirection/WindDirection";
 
 import styles from "./WeatherCard.module.css";
-export default function WeatherCard({ dataDay }) {
+export default function WeatherCard({ dataDay, index }) {
   const imgSrc = dataDay && icons[dataDay.weather[0].icon];
 
   return (
-    <div className={styles.cardContainer}>
+    <div className={index===0 ? styles.cardContainerStart : styles.cardContainer }>
       <span className={styles.forecastDate}>
         <FormatDate date={dataDay.dt * 1000} />
       </span>
