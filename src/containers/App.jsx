@@ -15,7 +15,6 @@ export default function App() {
   const API_KEY = process.env.REACT_APP_API_KEY;
 
   function handleGetDataSearch(searchData) {
-    
     let [lat, lon] = searchData.value.split(" ");
     const weatherFetch = fetch(
       `${weather_API_URL}onecall?lat=${lat}&lon=${lon}&units=metric&exclude=minutely&appid=${WEATHER_API_KEY}`
@@ -24,7 +23,7 @@ export default function App() {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        
+
         setDataWeather({ city: searchData.label, ...data });
       })
       .catch((error) => {
@@ -48,9 +47,9 @@ export default function App() {
         onHandleGetSearchData={handleGetDataSearch}
         weatherData={dataWeather}
       >
-        <SwiperContainer dataWeather={dataWeather} />
+        {dataWeather ? <SwiperContainer dataWeather={dataWeather} /> : null}
       </MainContainer>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

@@ -8,9 +8,8 @@ import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 
 export default function SwiperContainer({ dataWeather }) {
-  console.log(dataWeather);
 
-  let swiper = dataWeather ? (
+  return (
     <Swiper
       scrollbar={{ hide: false }}
       slidesPerView={1}
@@ -44,6 +43,5 @@ export default function SwiperContainer({ dataWeather }) {
         );
       })}
     </Swiper>
-  ) : null;
-  return swiper;
+  )
 }
