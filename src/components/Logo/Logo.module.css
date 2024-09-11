@@ -18,7 +18,7 @@
   display: flex;
   position: absolute;
   top: 50%;
-  left: 25%;
+  left: 50%;
   transform: translate(0%, -50%);
 
   font-size: 15px;
