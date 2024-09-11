@@ -1,5 +1,5 @@
 
-.container {
+.logoContainer {
   position: relative;
   width: 120px;
   height: 60px;
@@ -18,7 +18,7 @@
   display: flex;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 25%;
   transform: translate(0%, -50%);
 
   font-size: 15px;
