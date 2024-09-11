@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Header from "./Header/Header";
-import { WEATHER_API_KEY } from "../../API";
 
 import styles from "./App.module.css";
 
@@ -13,7 +12,7 @@ export default function App() {
   const [dataWeather, setDataWeather] = useState(null);
 
   const weather_API_URL = "https://api.openweathermap.org/data/3.0/";
-  // const API_KEY = process.env.REACT_APP_API_KEY;
+  const API_KEY = process.env.REACT_APP_API_KEY;
 
   function handleGetDataSearch(searchData) {
     
