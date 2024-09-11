@@ -23,6 +23,6 @@
 
   font-size: 15px;
   line-height: 0.8;
-  color: rgb(16, 16, 174);
+  color:var(--main-text-color);
   font-weight: 800;
 }
