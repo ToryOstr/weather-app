@@ -16,24 +16,25 @@ export default function Search({ onSearchChange }) {
     },
   };
   async function loadOptions(inputValue) {
-    try {
-      const response = await fetch(
-        `${geo_API_URL}/cities?minPopulation=1000&namePrefix=${inputValue}`,
-        geoApiOptions
-      );
-      const data = await response.json();
-      return {
-        options: data.data.map((city) => ({
-          value: `${city.latitude} ${city.longitude}`,
-          label: `${city.name}, ${city.countryCode}`,
-        })),
-      };
-    } catch (error) {
-      console.error(error);
-      return {
-        options: [], 
-      };
-    }
+    return fetch(
+      `${geo_API_URL}/cities?minPopulation=1000&namePrefix=${inputValue}`,
+      geoApiOptions
+    )
+      .then((response) => response.json())
+      .then((response) => {
+        return {
+          options: response.data.results.map((city) => ({
+            value: `${city.latitude} ${city.longitude}`,
+            label: `${city.label}`,
+          })),
+        };
+      })
+      .catch((error) => {
+        console.error(error);
+        return {
+          options: []
+        }
+      });
   }
 
   function handleInputOnChange(searchData) {
