@@ -6,7 +6,7 @@ import img from './sun.png';
 
 export default function Logo(){
   return (
-    <div className={styles.logoContainer}>
+    <div className={styles.logoWrapper}>
       <motion.div
         style={{
           width: "60px",
