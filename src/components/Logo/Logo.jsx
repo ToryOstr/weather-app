@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 
-import "./Logo.module.css";
+import styles from "./Logo.module.css";
 
 import img from './sun.png';
 
 export default function Logo(){
   return (
-    <div className="logoContainer">
+    <div className={styles.logoContainer}>
       <motion.div
         style={{
           width: "60px",
@@ -17,9 +17,9 @@ export default function Logo(){
         animate={{ rotate: 360 }}
         transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
       >
-        <img className='imgLogo' src={img} alt="sun" />
+        <img className={styles.imgLogo} src={img} alt="sun" />
       </motion.div>
-      <span className='logoTxt'> Your Weather</span>
+      <span className={styles.logoTxt}> Your Weather</span>
     </div>
     
   )
