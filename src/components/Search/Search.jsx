@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { AsyncPaginate } from "react-select-async-paginate";
-import styles from "./search.module.css";
+import styles from "./Search.module.css";
 
 export default function Search({ onSearchChange }) {
   const [search, setSerch] = useState(null);
