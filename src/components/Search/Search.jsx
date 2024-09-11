@@ -23,7 +23,7 @@ export default function Search({ onSearchChange }) {
       .then((response) => response.json())
       .then((response) => {
         return {
-          options: response.data.results.map((city) => ({
+          options: response.data.map((city) => ({
             value: `${city.latitude} ${city.longitude}`,
             label: `${city.label}`,
           })),
