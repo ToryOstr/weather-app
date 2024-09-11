@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { AsyncPaginate } from "react-select-async-paginate";
-import styles from "./search.module.css";
+import styles from "./Search.module.css";
 import { geoApiOptions } from "../../../API.js";
 // eslint-disable-next-line react/prop-types
 export default function Search({ onSearchChange }) {
