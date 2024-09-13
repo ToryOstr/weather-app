@@ -26,7 +26,7 @@ export default function Search({ onSearchChange }) {
         return {
           options: response.data.map((city) => ({
             value: `${city.latitude} ${city.longitude}`,
-            label: `${city.label}`,
+            label: `${city.name}, ${city.countryCode}`,
           })),
         };
       })
