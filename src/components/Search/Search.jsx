@@ -6,12 +6,13 @@ export default function Search({ onSearchChange }) {
   const [search, setSerch] = useState(null);
 
   const geo_API_URL = "https://wft-geo-db.p.rapidapi.com/v1/geo";
-  // const RapidAPI_Key = process.env.REACT_APP_RapidAPI_Key;
+
+  const GEO_RapidAPI_KEY = import.meta.env.VITE_GEO_RapidAPI_KEY;
 
   const geoApiOptions = {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": process.env.REACT_APP_RapidAPI_Key,
+      "X-RapidAPI-Key": GEO_RapidAPI_KEY,
       "X-RapidAPI-Host": "wft-geo-db.p.rapidapi.com",
     },
   };

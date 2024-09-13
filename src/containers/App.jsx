@@ -12,7 +12,7 @@ export default function App() {
   const [dataWeather, setDataWeather] = useState(null);
 
   const weather_API_URL = "https://api.openweathermap.org/data/3.0/";
-  const API_KEY = process.env.REACT_APP_API_KEY;
+  const WEATHER_API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 
   function handleGetDataSearch(searchData) {
     let [lat, lon] = searchData.value.split(" ");
