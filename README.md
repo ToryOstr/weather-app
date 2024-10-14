@@ -1,5 +1,5 @@
 # Weather application
-Documentation
+Description
 ## Overview
 This project is a React application built using Vite and optimized with SWC for fast compilation. Vite provides a modern development toolset, while SWC significantly improves the JavaScript and JSX transpilation process.
 
