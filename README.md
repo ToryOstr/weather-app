@@ -1,7 +1,7 @@
 # Weather application
 Description
 ## Overview
-This project is a React application built using Vite and optimized with SWC for fast compilation. Vite provides a modern development toolset, while SWC significantly improves the JavaScript and JSX transpilation process.
+This is a React application. It built using Vite and optimized with SWC for fast compilation. Vite provides a modern development toolset, while SWC significantly improves the JavaScript and JSX transpilation process.
 
 ## Technologies:
 - Vite: A modern build tool that provides a fast development environment, utilizing Esbuild for pre-bundling and distributed caching.
@@ -12,15 +12,17 @@ This project is a React application built using Vite and optimized with SWC for 
 
 ## Project Setup:
 
-Project Initialization The project was created using Vite:
+The project created using Vite:
 
 `` 
 npm create vite@latest 
 ``
 
-## Build Process The project is built using SWC for fast transpilation:
+## Build Process 
 
-SWC is configured in Vite for improved performance during development and build phases.
+The project built using SWC for fast transpilation:
+
+SWC configured in Vite for improved performance during development and build phases.
 
 ## Running and Building:
 
@@ -38,7 +40,7 @@ npm run build
 
 ## Project Structure
 
-The application is built using functional components and is divided into Containers and UI Components.
+The application built using functional components and divided for Containers and UI Components.
 
 ```
 weather-app/
@@ -49,8 +51,8 @@ weather-app/
 ├── src/
 │   ├── assets/
 │   |      └── WeatherIcon/
-|   |          ├── weathericon/      # There are weather images 
-│   |          ├── WeatherIcon.jsx   # There are paths of the weather images used in the UI component WeatherCard
+|   |          ├── weathericon/      # There are images of the weather
+│   |          ├── WeatherIcon.jsx   # There are paths  into images of the weather used in the UI component WeatherCard in this file
 │   ├── components/                  # There are UI-components 
 |   ├── containers/                  # There are container-components
 |   ├── index.css
@@ -62,8 +64,8 @@ weather-app/
 ├── .eslintrc.cjs
 ├── package.json
 ├── package-lock.json
-└── API.js # This file was added to gitignore rules
+└── API.js # This file containe api-keys. It added to gitignore rules
 
 ```
 
-In component Logo use [frame-motion](https://www.npmjs.com/package/framer-motion?activeTab=readme) library
+I used [frame-motion](https://www.npmjs.com/package/framer-motion?activeTab=readme) library to build animanion in a component Logo.
