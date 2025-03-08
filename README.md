@@ -72,7 +72,7 @@ weather-app/
 ## HOW DOES IT WORK ?
 ### index.jsx
 There is import the React, the ReactDOM, the component App and a css default style in the index.jsx file.
-The index.jsx creates the root element and renders the app into the it. 
+The index.jsx creates the root element and renders the app into the it.
 
 ### App.jsx
 The background of the App is a looped short video.
@@ -94,3 +94,14 @@ The component Logo uses a [frame-motion library](https://www.npmjs.com/package/f
 #### FormatDate.jsx
 This component gets a timestamp  as a prop and converts it into a human-readable format.
 This component is used in the  components Header and a WeatherCard.
+
+### MainContainer.jsx
+
+The MainContainer component serves as a wrapper for the main content of the application. It includes a search bar and dynamically renders child components.
+
+The handleOnSearchChange function is used to pass search data from the Search component to the parent via onHandleGetSearchData.
+
+The children prop allows for flexible content placement within the container.
+
+#### Search.jsx
+The Search component allows users to search for cities using the GeoDB Cities API. It utilizes the react-select-async-paginate library to asynchronously fetch city suggestions based on user input.
