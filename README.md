@@ -105,3 +105,14 @@ The children prop allows for flexible content placement within the container.
 
 #### Search.jsx
 The Search component allows users to search for cities using the GeoDB Cities API. It utilizes the react-select-async-paginate library to asynchronously fetch city suggestions based on user input.
+
+After user has selected their city the geolocation information is passed to the MainContainer and then to the App.jsx as a searchData fot next fetching the data of the weather
+
+#### SwiperContainer.jsx
+This component takes all the weather data from the response of the fetch, creates the required number of weather cards according to the information in the response of the fetch and passes it to the each individual SwiperSlide component and then in the each individual WeatherCard component.
+
+#### WeatherCard.jsx
+This component is divided into smaller components that are responsible for displaying weather information.
+
+#### OtherParameters.jsx
+This is a dynamic reusable component that accepts properties to change its display parameters.
